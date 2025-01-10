@@ -9,6 +9,11 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Greeting {
-    private String content;
+public class Name {
+    String name;
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }
