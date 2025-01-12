@@ -1,10 +1,10 @@
-package com.spbstu.web_socket_chat;
+package com.spbstu.graph_builder;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebSocketChatApplicationTests {
+class GraphBuilderApplicationTests {
 
 	@Test
 	void contextLoads() {

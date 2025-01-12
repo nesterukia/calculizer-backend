@@ -1,4 +1,4 @@
-package com.spbstu.web_socket_chat.entities;
+package com.spbstu.graph_builder.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,9 +11,7 @@ import java.util.ArrayList;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Message {
-    public static int MESSAGE_COUNTER = 0;
-    private String sender;
-    private String recipient;
-    private String content;
+public class User {
+    public static final ArrayList<User> CONNECTED_USERS = new ArrayList<>();
+    private String id;
 }

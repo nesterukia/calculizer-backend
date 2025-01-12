@@ -1,4 +1,4 @@
-package com.spbstu.web_socket_chat.configuration;
+package com.spbstu.graph_builder.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
@@ -17,10 +17,13 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
         // for private user
         config.setUserDestinationPrefix("/user");
+        // orders publishing
+        config.setPreservePublishOrder(true);
     }
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
+        registry.setPreserveReceiveOrder(true);
         registry.addEndpoint("/gs-guide-websocket");
     }
 

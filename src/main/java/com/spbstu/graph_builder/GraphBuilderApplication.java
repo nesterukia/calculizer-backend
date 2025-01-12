@@ -1,13 +1,13 @@
-package com.spbstu.web_socket_chat;
+package com.spbstu.graph_builder;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WebSocketChatApplication {
+public class GraphBuilderApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WebSocketChatApplication.class, args);
+		SpringApplication.run(GraphBuilderApplication.class, args);
 	}
 
 }
