@@ -12,6 +12,7 @@ public class Calculator {
             case SINE -> yCoordinate = Math.sin(xCoordinate);
             case COSINE -> yCoordinate = Math.cos(xCoordinate);
             case LINE -> yCoordinate = xCoordinate;
+            case HEART -> yCoordinate = Math.cbrt(xCoordinate * xCoordinate) + 0.9 * Math.sqrt(3.3 - xCoordinate * xCoordinate) * Math.sin(18.2  * Math.PI * xCoordinate);
         }
         return new Point(xCoordinate, yCoordinate);
     }

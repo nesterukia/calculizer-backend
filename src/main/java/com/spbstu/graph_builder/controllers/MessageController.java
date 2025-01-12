@@ -12,7 +12,7 @@ import java.util.Date;
 @Controller
 public class MessageController {
 
-    private static final int SLEEP_MS = 128;
+    private static final int SLEEP_MS = 64;
     private final SimpMessagingTemplate simpMessagingTemplate;
     @Autowired
     public MessageController(SimpMessagingTemplate simpMessagingTemplate){
